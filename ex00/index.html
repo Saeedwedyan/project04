@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header id="Aboutme">
+        <div id="header">
+            <h1>SAEED ALWEDIAN</h1> 
+            <h2 >Computer  Engineering</h2>
+        </div>
+        <nav id="about">
+            <a href="#Aboutme">About Me</a>
+            <a href="#Skills">Skills</a>
+            <a href="#Projects">Projects</a>
+            <a href="#Hobbies">Hobbies</a>
+            <a href="#Contact">Contact</a>
+            <button id="themeButton">Change Theme</button>
+        </nav>
+    </header>
+    <main>
+        <section class="Aboutme">
+            <h2>ABOUT ME</h2>
+            <div class="about-content">
+                    <div id="para"> 
+                        <p>An ambitious, newly graduated computer engineer seeking to join a leading technology company, with the goal of applying my <br>
+                        experience and skills in an innowtion-driven work environment and contributing to the development of advanced technology
+                        solution.</p>
+                </div>     
+                <img src="assets/profile.jpg" alt="Profile photo of Saeed Alwedian" width="300px" height="300px"> 
+
+            </div>    
+        </section>
+        <section id="Skills">
+            <h2>Skills</h2>
+            <ul id="grid">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>python</li>
+                <li>Linux</li>
+                <li>problem Solving</li>
+            </ul>
+        </section>
+        <section id="Projects">
+            <h2>Projects</h2>
+            <div id="grid-project">
+
+                <article>
+                    <h3>Project 00</h3>
+                    <p>Practiced Linux commands, file management, Git, GitHub, and SSH authentication.</p>
+                </article>
+
+                <article>
+                    <h3>Project 01</h3>
+                    <p>Practiced HTML5 structure, links, images, lists, tables, forms, validation, and semantic HTML.</p>
+                </article>
+                <article>
+                    <h3>Project 02</h3>
+                    <p>Learned CSS Flexbox, positioning, shapes, colors, box model, animations, and transitions.</p>
+                </article>
+                <article>
+                    <h3>Project 03</h3>
+                    <p>Practiced JavaScript, DOM manipulation, events, and building interactive web applications.</p>
+                </article>
+            </div>
+        </section>
+        <section id="Hobbies">
+            <h2>Hobbies</h2>
+            <ul>
+                <li>Programming</li>
+                <li>Learning new technologies</li>
+                <li>Cybersecurity</li>
+                <li>Gaming</li>
+                <li>Solving puzzles</li>
+            </ul>
+        </section>
+        <section id="Contact">
+            <h2>Contact</h2>
+            <form>
+                <label for="fullname">Name:</label>
+                <input type="text" id="fullname" name="fullname" required>
+                <br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required> <br>  
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required minlength="10"></textarea> 
+                <br>
+                <button id="Submit" type="button">Submit</button>
+            </form>
+        </section>
+    </main> 
+    <footer id="copy">
+        <p>© 2026 Saeed Alwedian</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

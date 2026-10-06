@@ -1,0 +1,208 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 0 30px;
+}
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.head h1 {
+    margin: 0;
+    font-size: 40px;
+    color: rgb(75, 74, 74);
+}
+
+.head h2 {
+    margin: 5px 0 0;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+#about {
+    display: flex;
+    gap: 20px;
+}
+
+#about a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#about a:hover {
+    text-decoration: underline;
+}
+section {
+    padding: 50px 0;
+}
+
+section h2 {
+    margin-bottom: 25px;
+}
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+#para {
+    padding: 20px;
+    max-width: 700px;
+}
+
+.about-content img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+#grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 0;
+    list-style: none;
+}
+
+#grid li {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    text-align: center;
+}
+
+
+#grid-project {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 0;
+    list-style: none;
+}
+
+#grid-project article {
+    padding: 25px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+#Hobbies ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 0;
+    list-style: none;
+}
+
+#Hobbies li {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    text-align: center;
+}
+#Contact {
+    text-align: center;
+}
+
+#Contact a {
+    margin: 0 10px;
+}
+
+#Contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 500px;
+    margin: 30px auto 0;
+}
+
+#Contact input,
+#Contact textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+#Contact textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+#Submit {
+    border: none;
+    border-radius: 20px;
+    background-color: blue;
+    color: aliceblue;
+    font-size: 18px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#Submit:hover {
+    opacity: 0.8;
+}
+#copy {
+    text-align: center;
+    padding: 25px 0;
+    border-top: 1px solid #ccc;
+}
+.dark {
+    background: black;
+    color: white;
+}
+
+.dark .head h1 {
+    color: white;
+}
+
+.dark #about a {
+    color: white;
+}
+@media (max-width: 768px) {
+
+    body {
+        padding: 0 15px;
+    }
+
+    .head {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    #about {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #para {
+        padding: 0;
+    }
+
+    .about-content img {
+        width: 220px;
+        height: 220px;
+    }
+
+    #grid,
+    #grid-project,
+    #Hobbies ul {
+        grid-template-columns: 1fr;
+    }
+}
