@@ -9,9 +9,6 @@ button.addEventListener('click',function(){
     }
  
 })
-
-
-// ---------- Profile photo switcher ----------
 const img = document.getElementById("profilePhoto")
 const switchButton = document.getElementById("switchButton")
 switchButton.addEventListener('click',function(){
