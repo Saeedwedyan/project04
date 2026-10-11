@@ -1,0 +1,419 @@
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0 auto;
+    width: 1040px;
+    padding: 0 28px;
+    font-family: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+    line-height: 1.7;
+    background: #f5f6f8;
+    color: #151e2a;
+    transition: background 0.2s, color 0.2s;
+}
+
+h1, h2, h3 {
+    font-family: "JetBrains Mono", "Courier New", monospace;
+    line-height: 1.2;
+}
+.head {
+    padding: 56px 0 20px;
+}
+
+.head h1 {
+    margin: 0;
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: -1px;
+}
+.head h2 {
+    margin: 12px 0 0;
+    font-size: 1.15rem;
+    color: #a8480a;
+}
+
+.cursor {
+    display: inline-block;
+    width: 0.6em;
+    height: 1.1em;
+    margin-left: 6px;
+    vertical-align: text-bottom;
+    background: #a8480a;
+    animation: blink 1.1s steps(1) infinite;
+}
+
+@keyframes blink {
+    50% { opacity: 0; }
+}
+
+#about {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px 24px;
+    padding: 14px 0;
+    border-top: 1px solid #d3d9e1;
+    border-bottom: 1px solid #d3d9e1;
+}
+
+#about a {
+    text-decoration: none;
+    color: #4f5d6e;
+}
+
+#about a:hover {
+    color: #151e2a;
+    text-decoration: underline;
+    text-underline-offset: 6px;
+}
+
+#themeButton {
+    margin-left: auto;
+    padding: 6px 14px;
+    font-family: inherit;
+    font-size: 14px;
+    color: #151e2a;
+    background: transparent;
+    border: 1px solid #d3d9e1;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#themeButton:hover {
+    border-color: #a8480a;
+}
+
+section {
+    padding: 56px 0 8px;
+}
+
+section h2 {
+    margin: 0 0 24px;
+    font-size: 1.6rem;
+}
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+#para {
+    width: 500px;
+}
+
+#para p {
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+.about-content img {
+    width: 260px;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #a8480a;
+    background: #ffffff;
+}
+#grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;    
+    gap: 16px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.lists{
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+.lists:hover{
+    transform: translatey(-8px) scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.dark .lists:hover{
+    transform: translatey(-8px) scale(1.05);
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.5);
+}
+
+#grid li {
+    padding: 18px;
+    background: #ffffff;
+    border: 1px solid #d3d9e1;
+    border-radius: 8px;
+    text-align: center;
+    font-family: "JetBrains Mono", "Courier New", monospace;
+    font-size: 0.95rem;
+}
+
+#grid-project {
+    display: grid;
+    grid-template-columns: 1fr 1fr;    
+    gap: 16px;
+}
+
+#grid-project article {
+    padding: 24px;
+    background: #ffffff;
+    border: 1px solid #d3d9e1;
+    border-radius: 8px;
+}
+
+#grid-project h3 {
+    margin: 0 0 8px;
+    font-size: 1.1rem;
+    color: #a8480a;
+}
+
+#grid-project p {
+    margin: 0;
+    color: #4f5d6e;
+}
+.article{
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.article:hover{
+    transform: translatey(-8px) scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.dark .article:hover{
+    transform: translatey(-8px) scale(1.05);
+    box-shadow: 0 10px 20px rgb(255, 255, 255,0.5);
+}
+#Hobbies ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+#Hobbies li {
+    padding: 18px;
+    background: #ffffff;
+    border: 1px solid #d3d9e1;
+    border-radius: 8px;
+    text-align: center;
+}
+.lists-hobbies{
+    transition: transform 0.3s ease-in;
+}
+.dark .lists-hobbies{
+    transition: transform 0.3s ease-out;
+}
+.lists-hobbies:hover{
+    transform: translatey(-8px) scale(1.05);
+}
+
+
+#Contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    width: 520px;
+}
+
+#Contact label {
+    margin-top: 10px;
+}
+
+#Contact input,
+#Contact textarea {
+    padding: 12px;
+    font-family: inherit;
+    font-size: 16px;
+    color: #151e2a;
+    background: #ffffff;
+    border: 1px solid #d3d9e1;
+    border-radius: 6px;
+}
+
+#Contact textarea {
+    height: 140px;
+    resize: vertical;
+}
+
+#Submit {
+    width: 200px;
+    margin-top: 18px;
+    padding: 12px 26px;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    background: #a8480a;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#Submit:hover {
+    opacity: 0.85;
+}
+
+#formStatus {
+    margin: 8px 0 0;
+    color: #4f5d6e;
+}
+
+#copy {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px 28px;
+    margin-top: 64px;
+    padding: 28px 0;
+    border-top: 1px solid #d3d9e1;
+    color: #4f5d6e;
+}
+
+#copy p {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+}
+
+#copy a {
+    color: #4f5d6e;
+    text-decoration: none;
+}
+
+#copy a:hover {
+    color: #a8480a;
+    text-decoration: underline;
+    text-underline-offset: 6px;
+}
+
+.dark {
+    background: #0d1420;
+    color: #e4eaf2;
+}
+
+.dark .head h2 {
+    color: #ffb454;
+}
+
+.dark .cursor {
+    background: #ffb454;
+}
+
+.dark #about {
+    border-color: #25324a;
+}
+
+.dark #about a {
+    color: #93a1b3;
+}
+
+.dark #about a:hover {
+    color: #e4eaf2;
+}
+
+
+.dark #themeButton {
+    color: #e4eaf2;
+    border-color: #25324a;
+}
+
+.dark #themeButton:hover {
+    border-color: #ffb454;
+}
+.dark .about-content img {
+    background: #131c2b;
+    border-color: #ffb454;
+}
+
+.dark #grid li,
+.dark #grid-project article,
+.dark #Hobbies li {
+    background: #131c2b;
+    border-color: #25324a;
+}
+
+.dark #grid-project h3 {
+    color: #ffb454;
+}
+
+.dark #grid-project p {
+    color: #93a1b3;
+}
+
+.dark #Contact input,
+.dark #Contact textarea {
+    color: #e4eaf2;
+    background: #131c2b;
+    border-color: #25324a;
+}
+
+.dark #Submit {
+    color: #10151d;
+    background: #ffb454;
+}
+
+.dark #formStatus {
+    color: #93a1b3;
+}
+
+.dark #copy {
+    border-color: #25324a;
+    color: #93a1b3;
+}
+
+.dark #copy a {
+    color: #93a1b3;
+}
+
+.dark #copy a:hover {
+    color: #ffb454;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 0 16px;
+    }
+
+    .head {
+        padding-top: 36px;
+    }
+
+    #themeButton {
+        margin-left: 0;
+    }
+
+    .about-content {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .about-content img {
+        width: 200px;
+        height: 200px;
+    }
+
+    #grid,
+    #grid-project,
+    #Hobbies ul {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    .cursor {
+        animation: none;
+    }
+
+    body {
+        transition: none;
+    }
+}
